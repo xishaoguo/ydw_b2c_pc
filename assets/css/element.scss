@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+.el-message{
+    top: 20px !important;
+}
+/* 覆盖 MessageBox.confirm  start*/
+.el-message-box{
+    width: 384px;
+}
+.el-message-box__title{
+    font-size: 16px !important;
+    color: rgba(0,0,0,0.85) !important;
+    font-weight: bold !important;
+}
+.el-message-box__message{
+    font-weight: bold !important;
+    color: rgba(0,0,0,0.65) !important;
+    font-size: 14px !important;
+}
+//取消按钮的自定义类名
+.cancelButtonClass{
+    width: 49px;
+    height: 24px;
+    background: #FFFFFF !important;
+    border-radius: 2px;
+    border: 1px solid rgba(0,0,0,0.15);
+    font-weight: 400;
+    color: rgba(0,0,0,0.65) !important;
+    line-height: 24px;
+    padding: 0;
+}
+//确定按钮的自定义类名
+.confirmButtonClass{
+    width: 49px;
+    height: 24px;
+    background: #00A47C !important;
+    border-radius: 2px;
+    border: 1px solid #00A47C !important;
+    font-weight: 400;
+    color: #FFFFFF !important;
+    line-height: 24px;
+    padding: 0;
+}
+/* 覆盖 MessageBox.confirm  end*/
+/* 覆盖分页组件样式*/
+.el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li {
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #D9D9D9;
+  color: rgba(0, 0, 0, 0.65);
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background: #00A47C;
+}
+.el-pagination__total {
+  margin-left: 35px;
+}
+.el-pagination .el-pager .number {
+  font-weight: normal;
+}

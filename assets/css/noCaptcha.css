@@ -1,0 +1,62 @@
+/* 滑动条高度、边框、背景色等 */
+._nc .stage1{
+    height: 40px;
+}
+._nc .stage1 .slider {
+    height: 40px;
+    border-radius: 50px;
+    box-shadow: 0 0 3px #999;
+    background-color: #ddd;
+    left: 0px;
+    right:0px;
+}
+/* 滑动条 */
+._nc .stage1 .track div {
+    border-radius: 50px;
+    color: #fff;
+}
+._nc .stage1 .track div, ._nc .stage1 .label {
+    line-height: 40px;
+    height: 40px;
+    font-size: 14px;
+}
+/* 滑动条背景色-正常 */
+._nc .stage1 .bg-green {
+    /* background-color: #78c430; */
+    background: linear-gradient(51deg,rgba(120,223,170,1) 0%,rgba(41,180,195,1) 100%);
+}
+/* 滑动条背景色-失败 */
+._nc .stage1 .bg-red {
+    background-color: #ff5500;
+}
+._nc .stage1 .button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+._nc .stage1 .icon {
+    left: 50%;
+    transform: translateX(-50%);
+}
+._nc .icon-ok {
+    font-size: 40px;
+    color: rgba(41,180,195,1);
+    width: 40px;
+    height: 43px;
+}
+._nc .icon-close {
+    font-size: 40px;
+    width: 40px;
+    height: 100px;
+    color: #fc5620;
+}
+._nc .icon-slide-arrow{
+    font-size: 20px;
+    color: #dbdbdb;
+    line-height: 30px;
+    text-align: center;
+}
+/* 各个状态的icon */
+/* 等待滑动："icon iconfont icon-slide-arrow"
+验证出错："icon no iconfont icon-close"
+验证通过："icon yes iconfont icon-ok" */
